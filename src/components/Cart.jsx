@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 // import { useEffect, useState } from "react";
 
 const Cart = ({ items, order, changeQuantity, removeItem }) => {
-  // const [value, setValue] = useState(0);
-  // useEffect(() => {
-  //   if (value < 0) {
-  //     setValue(0);
-  //   }
-  // }, [value]);
+
 
   return (
     <div className="container cart">

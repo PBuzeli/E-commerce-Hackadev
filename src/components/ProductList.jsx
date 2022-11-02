@@ -1,4 +1,4 @@
-import { useState, Component } from 'react';
+import { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/product-list.css';
 import { fetchProducts } from "../actions/index";
@@ -10,55 +10,7 @@ class ProductList extends Component {
     this.props.fetchProducts();
   }
 
-  /* const [productsList, setProductList] = useState(products);
 
-  const handleOrderList = () => {
-    let newProducts = [...products];
-
-    let selectOption = document.getElementById('selectBox');
-    let selectedValue = selectOption.options[selectOption.selectedIndex].value;
-
-    if (selectedValue === '2') {
-      newProducts.sort((a, b) => {
-        if (a.price > b.price) {
-          return 1;
-        } else {
-          if (a.price < b.price) {
-            return -1;
-          } else {
-            return 0;
-          }
-        }
-      });
-    } else if (selectedValue === '3') {
-      newProducts.sort((a, b) => {
-        if (a.percent < b.percent) {
-          return 1;
-        } else {
-          if (a.percent > b.percent) {
-            return -1;
-          } else {
-            return 0;
-          }
-        }
-      });
-    } else if (selectedValue === '4') {
-      newProducts.sort((a, b) => {
-        if (a.rating < b.rating) {
-          return 1;
-        } else {
-          if (a.rating > b.rating) {
-            return -1;
-          } else {
-            return 0;
-          }
-        }
-      });
-    }
-
-    setProductList(newProducts);
-  };
- */
   render() {
 
     const productItems = this.props.products.map((product) => (

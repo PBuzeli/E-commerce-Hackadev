@@ -1,0 +1,68 @@
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    width: 100vh;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+
+}
+
+
+
+.product-item img {
+    width: 210px;
+    height: 210px;
+    background-color: white;
+    object-fit: cover;
+    margin: 5px;
+    cursor: pointer;
+    
+    
+}
+
+.product-item img:hover{
+    transform: filter 0.2s;
+    transition: ease-in-out 0.4s;
+    filter: brightness(0.9);
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: none; 
+}
+
+.buttons button img {
+   width: 24px;
+   height: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.buttons button:first-child {
+    transform: rotate(180deg);
+}
+
+.buttons button img:active {
+    transform: scale(1.05);
+}

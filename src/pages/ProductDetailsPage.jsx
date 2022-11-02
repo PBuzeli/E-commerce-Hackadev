@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import ProductDetails from '../components/ProductDetails';
-import { ADD_TO_CART, CHANGE_QUANTITY } from '../actions';
+import { ADD_TO_CART } from '../actions';
 
 const ProductDetailsPage = () => {
   const dispatch = useDispatch();

@@ -83,7 +83,7 @@ const ProductDetails = ({ product, addToCart, quanity }) => {
       </section>
 
       <section>
-        <ProductRelated />
+        <ProductRelated idProduto={product.id_product} idCategory={product.product_category}/>
       </section>
     </>
   );

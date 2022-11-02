@@ -5,7 +5,7 @@ import Orders from '../components/Orders';
 
 const OrdersPage = () => {
   const cartItems = useSelector((state) => state.cart.items);
-  const order = useSelector((state) => state.order);
+
   const user = useSelector((state) => state.user);
 
   return (
